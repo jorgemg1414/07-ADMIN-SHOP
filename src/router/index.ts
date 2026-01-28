@@ -1,13 +1,14 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import ShopLayout from '@/modules/shop/layouts/ShopLayout.vue';
+import { createRouter, createWebHistory } from 'vue-router';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'home',
-    //   component: HomeView,
-    // },
+    {
+      path: '/',
+      name: 'shop',
+      component: ShopLayout,
+    },
     // {
     //   path: '/about',
     //   name: 'about',
@@ -17,6 +18,6 @@ const router = createRouter({
     //   component: () => import('../views/AboutView.vue'),
     // },
   ],
-})
+});
 
-export default router
+export default router;
